@@ -1,0 +1,38 @@
+#!/bin/bash
+if [ ! -d $1 ]
+then mkdir $1
+    if [ ! -f "readme.md" ]
+    then echo "# $1" > readme.md
+    fi
+fi
+cd $1
+if [ ! -d 'tutorial_docs' ]
+then mkdir 'tutorial_docs'
+    if [ ! -f $1 ]
+    then echo '# Tutorial and Docs' > tutorial_docs/readme.md
+    fi
+fi
+if [ ! -d 'practice_tips' ]
+then mkdir 'practice_tips'
+    if [ ! -f $1 ]
+    then echo '# Practice and Tips' > practice_tips/readme.md
+    fi
+fi
+if [ ! -d 'forum_lessons' ]
+then mkdir 'forum_lessons'
+    if [ ! -f $1 ]
+    then echo '# Forum and Lessons' > forum_lessons/readme.md
+    fi
+fi
+if [ ! -d 'blog_news' ]
+then mkdir 'blog_news'
+    if [ ! -f $1 ]
+    then echo '# Blog and News' > blog_news/readme.md
+    fi
+fi
+if [ ! -d 'book_resources' ]
+then mkdir 'book_resources'
+    if [ ! -f $1 ]
+    then echo '# Book and Resources' > book_resources/readme.md
+    fi
+fi
