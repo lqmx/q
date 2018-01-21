@@ -1,0 +1,22 @@
+{
+    "name": "lqmx/mffc",
+    "authors": [
+        {
+            "name": "lqmx",
+            "email": "lmxqmx@foxmail.com"
+        }
+    ],
+    "require": {
+        "noahbuscher/macaw": "dev-master",
+        "illuminate/database": "*",
+        "filp/whoops": "*",
+        "nette/mail": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "app/controllers",
+            "app/models",
+            "services"
+        ]
+    }
+}
